@@ -49,6 +49,28 @@ public class Loop02While {
             j+=10;
         }
 
+
+        //        int i= 0;
+//        while (i <= 90) {
+//            int j = 1;
+//            while (j <= 10){
+//                System.out.print(i + 1 + " ");
+//                i++;
+//                j++;
+//            }
+//            System.out.println();
+//        }
+//        int i= 0;
+//        while (i < 100) {
+//            int j = 0;
+//            while (j < 10){
+//                i++;
+//                System.out.print(i + " ");
+//                j++;
+//            }
+//            System.out.println();
+//        }
+
         // Loop03While2
     }
 }
