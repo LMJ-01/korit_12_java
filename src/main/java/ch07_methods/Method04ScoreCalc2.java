@@ -43,3 +43,31 @@ public class Method04ScoreCalc2 {
         calcAvg();
     }
 }
+
+
+// 1. 합을 구하는 메서드 (과목 수를 매개변수로 받음)
+    public static double calcSum(int numOfSubs) {
+        double sum = 0;
+        Scanner scanner = new Scanner(System.in);
+
+        for (int i = 0; i < numOfSubs; i++) {
+            System.out.print((i + 1) + " 과목의 점수를 입력하세요. >>> ");
+            sum += scanner.nextDouble();
+        }
+        return sum;
+    }
+
+    // 2. 평균을 구하는 메서드
+    public static void calcAvg() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("몇 개의 과목을 입력하시겠습니까? >>> ");
+        int numOfSubs = scanner.nextInt();
+
+        double sum = calcSum(numOfSubs);  // 과목 수 전달
+        double avg = sum / numOfSubs;
+
+        System.out.println("총합은 : " + sum + "이며, 평균은 " + avg + "입니다.");
+    }
+
+    public 
