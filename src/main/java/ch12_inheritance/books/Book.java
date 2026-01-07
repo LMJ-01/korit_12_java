@@ -46,14 +46,15 @@ package ch12_inheritance.books;
 
  */
 public class Book {
+    // field 선언
     private String title;
     private String author;
-
+    // AllArgsConstructor
     public Book(String title, String author) {
         this.title = title;
         this.author = author;
     }
-
+    // Getter / Setter
     public String getTitle() {
         return title;
     }
@@ -69,7 +70,7 @@ public class Book {
     public void setAuthor(String author) {
         this.author = author;
     }
-
+    // Book 클래스의 고유 method
     public void showInfo() {
         System.out.println("제목 : " + getTitle());
         System.out.println("저자 : " + getAuthor());

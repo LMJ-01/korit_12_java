@@ -2,15 +2,20 @@ package ch12_inheritance.books;
 
 public class BookMain {
     public static void main(String[] args) {
+//        Book book1 = new Book();  // 이제는 이렇게 생성하는 게 불가능 -> AllArgsConstructor
         Book book1 = new Book("자바의 정석", "남궁성");
         System.out.println("이 책의 제목은 " + book1.getTitle() + "입니다.");
         System.out.println("이 책의 저자는 " + book1.getAuthor() + "입니다.");
         book1.showInfo();
         System.out.println();
         EBook eBook1 = new EBook("스프링 입문", "이강준", 5.2, "EPUB");
-        eBook1.setFormat("PDF");
+        eBook1.setFormat("PDF");        // 자식 클래스의 고유 메서드에 해당하겠네요.
         System.out.println("이 전자책의 포맷은 " + eBook1.getFormat()  + "입니다.");
+        // 재정의된 메서드 호출
         eBook1.showInfo();
 
     }
 }
+/*
+    ch13_abstraction -> 패키지 abstract_classes 생성 -> Factory / FactoryMain / PhoneFactory / TableFactory
+ */
