@@ -66,5 +66,20 @@ public class Main {
                 봄륨을 계속 올립니다.
                 전원을 끕니다.
          */
+        System.out.println("-------------------에어컨---------------------");
+        AirConditionerController airConditionerController = new AirConditionerController(
+                new PowerButton(),
+                new ModeChangeButton(),
+                new TemperatureDownButton(),
+                new TemperatureUpButton()
+        );
+        airConditionerController.onPressedPowerButton();
+        airConditionerController.onPressedTemperatureDownButton();
+        airConditionerController.onDownTemperatureDownButton();
+        airConditionerController.onPressedTemperatureUpButton();
+        System.out.println(airConditionerController.onUpTemperatureUpButton1());
+        airConditionerController.onUpTemperatureUpButton2();
+        airConditionerController.onPressedModeChangeButton();
+        airConditionerController.onPressedModeChangeButton();
     }
 }
