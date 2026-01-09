@@ -46,8 +46,10 @@ public class CentralControlMain {
         System.out.println("-----------------------------------삭제-------------------");
         centralControl1.deleteDevice(speaker1);
         centralControl1.deleteDevice(airConditioner1);
-        centralControl1.deleteDevice(3);
-        centralControl1.deleteDevice(4);
+        //centralControl1.deleteDevice(3);
+        centralControl1.deleteDevice("Mouse");
         centralControl1.showInfo();
+
+
     }
 }

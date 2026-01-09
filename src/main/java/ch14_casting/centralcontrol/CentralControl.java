@@ -202,6 +202,16 @@ public class CentralControl {
         deviceArray[index] = null;
     }
 
+    public void deleteDevice(String str) {
+        for (int i = 0; i < deviceArray.length; i++) {
+            if (deviceArray.equals(str.toString())) {
+                System.out.println(deviceArray[i].getClass().getSimpleName()
+                        + " 장치가 삭제되었습니다.");
+                deviceArray[i] = null;
+            }
+        }
+    }
+
 
     /*
         Printer 클래스와 Speaker 클래스를 생성하고 Power를 implement하시오.
